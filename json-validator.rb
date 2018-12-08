@@ -1,8 +1,8 @@
 class JsonValidator < Formula
   desc "Cli Json validator and formattor"
   homepage "https://github.com/wiztools/json-validator/"
-  url "https://github.com/wiztools/json-validator/releases/download/0.2.3/json-validator-fat-0.2.3.jar"
-  sha256 "9788ce9f0de3dbb8dc1a13bb87ff3bb88d91a3ef89a13c4769466f09c7f2c345"
+  url "https://github.com/wiztools/json-validator/releases/download/0.2.4/json-validator-fat-0.2.4.jar"
+  sha256 "f9ffa9ec957d23140c765f1f20cddf9a6e16d9671b851bebef500ad12f34338a"
 
   depends_on :java => "1.8"
 
