@@ -1,3 +1,5 @@
+require "language/node"
+
 class Anyurlhttpserver < Formula
   desc "Simple API mocking tool"
   homepage "https://github.com/wiztools/anyurlhttpserver/"
