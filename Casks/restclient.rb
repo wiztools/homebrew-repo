@@ -7,5 +7,7 @@ cask 'restclient' do
   name 'restclient'
   homepage 'https://github.com/wiztools/rest-client/'
 
+  depends_on :java => '1.8'
+
   app 'RESTClient.app'
 end
