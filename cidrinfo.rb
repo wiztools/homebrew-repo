@@ -1,13 +1,13 @@
 class Cidrinfo < Formula
   desc "Go tool to print info from the given CIDR like the ranges"
   homepage "https://github.com/wiztools/cidrinfo"
-  url "https://github.com/wiztools/cidrinfo/archive/0.1.0.tar.gz"
-  sha256 "f0ef27524f1cb07a5be4e29739bc56fbdddfd9f60f4030e66113215f8092e2fa"
+  url "https://github.com/wiztools/cidrinfo/archive/0.1.1.tar.gz"
+  sha256 "3c4c99003188edb219619a6878f260de959690ffc93e5aa3f9d41c69fa76c9c5"
   depends_on "go" => :build
 
   def install
-    system "./gobuild.sh"
-    bin.install ".gobuild/bin/cidrinfo" => "cidrinfo"
+    system "go build"
+    bin.install "cidrinfo" => "cidrinfo"
   end
 
   test do
