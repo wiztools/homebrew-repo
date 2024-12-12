@@ -5,6 +5,7 @@ class XsdGen < Formula
   sha256 "4fbcb9fa5c1f60f4fcf1e3d0628aa9fe2847b55ba1bf4d11974c6bad3b703ebb"
 
   bottle :unneeded
+  depends_on macos: ">= :big_sur"
   depends_on "openjdk@21"
 
   def install
