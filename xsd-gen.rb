@@ -9,12 +9,12 @@ class XsdGen < Formula
 
   def install
     system "jar"
-    libexec.install "xsd-gen-#{version}-fat.jar"
-    # bin.write_jar_script libexec/"xsd-gen-#{version}-fat.jar", "xsd-gen"
+    libexec.install "xsd-gen-0.3.0-fat.jar"
+    # bin.write_jar_script libexec/"xsd-gen-0.3.0-fat.jar", "xsd-gen"
     (bin/"xsd-gen").write <<~EOS
       #!/bin/bash
       export JAVA_HOME="#{Language::Java.overridable_java_home_env("21")[:JAVA_HOME]}"
-      exec "${JAVA_HOME}/bin/java" -jar "#{libexec}/xsd-gen-#{version}-fat.jar" "$@"
+      exec "${JAVA_HOME}/bin/java" -jar "#{libexec}/xsd-gen-0.3.0-fat.jar" "$@"
     EOS
   end
 
