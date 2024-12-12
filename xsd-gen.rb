@@ -6,6 +6,7 @@ class XsdGen < Formula
 
   bottle :unneeded
   depends_on macos: ">= :big_sur"
+  depends_on arch: :arm64
   depends_on "openjdk@21"
 
   def install
