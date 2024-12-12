@@ -5,15 +5,16 @@ class XsdGen < Formula
   sha256 "4fbcb9fa5c1f60f4fcf1e3d0628aa9fe2847b55ba1bf4d11974c6bad3b703ebb"
 
   bottle :unneeded
-  # depends_on :java => "openjdk@21"
+  depends_on "openjdk@21"
 
   def install
+    system "jar"
     libexec.install "xsd-gen-#{version}-fat.jar"
     # bin.write_jar_script libexec/"xsd-gen-#{version}-fat.jar", "xsd-gen"
     (bin/"xsd-gen").write <<~EOS
       #!/bin/bash
       export JAVA_HOME="#{Language::Java.overridable_java_home_env("21")[:JAVA_HOME]}"
-      exec "${JAVA_HOME}/bin/java" -server -jar "#{libexec}/xsd-gen-#{version}-fat.jar" "$@"
+      exec "${JAVA_HOME}/bin/java" -jar "#{libexec}/xsd-gen-#{version}-fat.jar" "$@"
     EOS
   end
 
