@@ -11,9 +11,3 @@ Or directly install any one of the formula (without tapping):
 ```
 brew install wiztools/repo/<formula>
 ```
-
-Available formulae:
-
-- `cidrinfo`
-- `dnsqry`
-- `knowledged`
