@@ -6,6 +6,12 @@ class Knowledged < Formula
   license "MIT"
   revision 1
 
+  bottle do
+    root_url "https://github.com/wiztools/homebrew-repo/releases/download/knowledged-0.1.0_1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "e708e0d39fe84fef67fc3e59a06262355baddc8dfbc8437533c92a9f5d42eb59"
+    sha256 cellar: :any,                 x86_64_linux: "bdc0bd67a79e3b0a75bf65ab04e42ae3ebca540895cf4c92a97cd5fc52002abd"
+  end
+
   depends_on "go" => :build
 
   def install
