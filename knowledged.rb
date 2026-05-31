@@ -4,6 +4,7 @@ class Knowledged < Formula
   url "https://github.com/wiztools/knowledged/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "b80983bfe136fe021f6d56bce6b268f64406d7feb50ed8bc7315d3afcc86fecd"
   license "MIT"
+  revision 1
 
   depends_on "go" => :build
 

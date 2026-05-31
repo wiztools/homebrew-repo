@@ -4,6 +4,7 @@ class Dnsqry < Formula
   url "https://github.com/wiztools/dnsqry/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "22d585697abd3096d9afe9022264c3b8f9214e0fccff1bcf3b1d452b8b4e7af2"
   license "MIT"
+  revision 1
 
   depends_on "rust" => :build
 
