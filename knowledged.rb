@@ -1,16 +1,9 @@
 class Knowledged < Formula
   desc "Self-organizing Git-backed knowledge base with HTTP and CLI interfaces"
   homepage "https://github.com/wiztools/knowledged"
-  url "https://github.com/wiztools/knowledged/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "b80983bfe136fe021f6d56bce6b268f64406d7feb50ed8bc7315d3afcc86fecd"
+  url "https://github.com/wiztools/knowledged/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "b4cf4430e018989f44e889c69850130ab80f595fbe0a5ce6f87f4d0751b9b807"
   license "MIT"
-  revision 1
-
-  bottle do
-    root_url "https://github.com/wiztools/homebrew-repo/releases/download/knowledged-0.1.0_1"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "e708e0d39fe84fef67fc3e59a06262355baddc8dfbc8437533c92a9f5d42eb59"
-    sha256 cellar: :any,                 x86_64_linux: "bdc0bd67a79e3b0a75bf65ab04e42ae3ebca540895cf4c92a97cd5fc52002abd"
-  end
 
   depends_on "go" => :build
 
